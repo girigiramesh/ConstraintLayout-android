@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="318dp"
+        android:layout_height="178dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/header"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/dummy"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideline"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintHorizontal_bias="0.06" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        android:id="@+id/favorite"
+        android:contentDescription="@string/dummy"
+        tools:layout_editor_absoluteY="147dp"
+        tools:layout_editor_absoluteX="260dp" />
+
+    <TextView
+        android:text="@string/camp_name"
+        android:layout_width="86dp"
+        android:layout_height="22dp"
+        android:id="@+id/campnouLabel"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        tools:layout_editor_absoluteX="357dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:text="@string/capacity"
+        android:layout_width="86dp"
+        android:layout_height="28dp"
+        android:id="@+id/capacityLabel"
+        app:layout_constraintLeft_toLeftOf="@+id/locationLabel"
+        app:layout_constraintRight_toRightOf="@+id/locationLabel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/campnouLabel" />
+
+    <EditText
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/capacity_value"
+        android:ems="10"
+        android:id="@+id/capacity"
+        app:layout_constraintTop_toBottomOf="@+id/campnouLabel"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:text="@string/Location"
+        android:layout_width="86dp"
+        android:layout_height="30dp"
+        android:id="@+id/locationLabel"
+        tools:layout_editor_absoluteX="386dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/capacityLabel" />
+
+    <EditText
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/location_value"
+        android:ems="10"
+        android:id="@+id/location"
+        tools:layout_editor_absoluteX="503dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/capacityLabel" />
+
+    <TextView
+        android:text="@string/architecturelabel"
+        android:layout_width="86dp"
+        android:layout_height="29dp"
+        android:id="@+id/architectLabel"
+        tools:layout_editor_absoluteX="386dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/locationLabel" />
+
+    <EditText
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/architecture"
+        android:ems="10"
+        android:id="@+id/architect"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/locationLabel"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:text="@string/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/upload"
+        app:layout_constraintRight_toLeftOf="@+id/guideline"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="95dp"
+        android:layout_height="49dp"
+        android:text="@string/discard"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:text="@string/title"
+        android:layout_width="319dp"
+        android:layout_height="132dp"
+        android:id="@+id/description"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="339dp"
+        android:id="@+id/guideline"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="334dp"
+        app:layout_constraintGuide_percent="0.48901904" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="683dp"
+        android:layout_height="0dp"
+        android:id="@+id/guideline2"
+        app:layout_constraintGuide_begin="182dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="182dp"
+        tools:layout_editor_absoluteX="0dp" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">constraint-layout-android</string>
+    <string name="dummy">dummy</string>
+    <string name="capacity">Capacity</string>
+    <string name="camp_name">Camp Name</string>
+    <string name="capacity_value">99,786</string>
+    <string name="Location">Location</string>
+    <string name="location_value"> hyderabad,India</string>
+    <string name="hyderabad_india">Hyderabad,India</string>
+    <string name="architecturelabel">Architecturial</string>
+    <string name="architecture">Forman Foster</string>
+    <string name="title">This is a list of international cricket grounds in India that have hosted at least one international cricket match (Test, ODI or T20I).
+International cricket was held in India for the first time in December 1933 when the Gymkhana Ground in Bombay played host to the India-England Test match. The first ODI match in India was held at the Sardar Vallabhbhai Patel Stadium, Ahmedabad in 1981.
+    </string>
+    <string name="upload">Upload</string>
+    <string name="discard">Discard</string>
+</resources>

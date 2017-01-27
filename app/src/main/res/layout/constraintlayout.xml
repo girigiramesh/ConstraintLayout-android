@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="141dp"
+        app:srcCompat="@android:drawable/sym_def_app_icon"
+        android:id="@+id/header"
+        android:contentDescription="@string/dummy"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        android:id="@+id/favorite"
+        android:contentDescription="@string/dummy"
+        app:layout_constraintRight_toRightOf="@+id/header"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toTopOf="@+id/header"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:text="@string/camp_name"
+        android:layout_width="98dp"
+        android:layout_height="34dp"
+        android:id="@+id/compname"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:text="@string/capacity"
+        android:layout_width="114dp"
+        android:layout_height="0dp"
+        android:id="@+id/capacityLabel"
+        app:layout_constraintLeft_toLeftOf="@+id/locationlabel"
+        app:layout_constraintRight_toRightOf="@+id/locationlabel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBaseline_toBaselineOf="@+id/capacity" />
+
+    <EditText
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/capacity_value"
+        android:ems="10"
+        android:id="@+id/capacity"
+        app:layout_constraintTop_toBottomOf="@+id/compname"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="27dp"
+        app:layout_constraintLeft_toRightOf="@+id/capacityLabel"
+        app:layout_constraintHorizontal_bias="0.96"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <TextView
+        android:text="@string/Location"
+        android:layout_width="114dp"
+        android:layout_height="34dp"
+        android:id="@+id/locationlabel"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/location"
+        app:layout_constraintRight_toLeftOf="@+id/location"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintHorizontal_bias="0.58" />
+
+    <EditText
+        android:layout_width="225dp"
+        android:layout_height="42dp"
+        android:inputType="textPersonName"
+        android:text="@string/hyderabad_india"
+        android:ems="10"
+        android:id="@+id/location"
+        tools:text="@string/location_value"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/capacityLabel" />
+
+    <TextView
+        android:text="@string/architecturelabel"
+        android:layout_width="112dp"
+        android:layout_height="32dp"
+        android:id="@+id/architecturelabel"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/architecture"
+        app:layout_constraintRight_toLeftOf="@+id/architecture"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintHorizontal_bias="0.6" />
+
+    <EditText
+        android:layout_width="225dp"
+        android:layout_height="42dp"
+        android:inputType="textPersonName"
+        android:text="@string/architecture"
+        android:ems="10"
+        android:id="@+id/architecture"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/locationlabel" />
+
+    <Button
+        android:text="@string/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/upload"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:text="@string/discard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/discard"
+        app:layout_constraintRight_toLeftOf="@+id/upload"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:text="@string/title"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:id="@+id/title"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="96dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/architecturelabel"
+        app:layout_constraintVertical_bias="0.13" />
+</android.support.constraint.ConstraintLayout>
